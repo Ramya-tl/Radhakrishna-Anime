@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: url(https://cdn.pixabay.com/photo/2017/05/06/14/13/pathway-2289978_1280.jpg) no-repeat top;
+            background-size: cover;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+        img[alt="fly"]{
+            height: 80px;
+            width: 100px;
+            position: absolute;
+            left: 0px;
+            top: 50px;
+            animation: bfly 20s infinite linear;
+        }
+        img[alt="krish"]{
+            height: 600px;
+            position: relative;
+            left: 300px;
+            bottom: 30px;
+            animation: krish 10s infinite linear;
+        }
+        img[alt="flute"]{
+            height: 80px;
+            position: relative;
+            right: 170px;
+            bottom: 390px;
+            animation: flute 10s infinite linear;
+        }
+        img[alt="peacock"]{
+            height: 130px;
+            position: relative;
+            right: -300px;
+            top: -120px;
+            animation: peacock 20s infinite linear;
+        }
+        @keyframes peacock{
+            20%{transform: skew(-5deg);}
+            50%{transform: skew(-10deg);}
+            80%{transform: skew(-5deg);}
+        }
+        @keyframes bfly {
+            from{transform: translatex(0px);}
+            to{transform: translatex(1000px) rotate(100deg);}
+        }
+        @keyframes krish {
+            25%{transform: translatex(-50px)  rotate(5deg);}
+            50%{transform: translatex(-100px)  rotate(10deg);}
+            75%{transform: translatex(-50px)  rotate(5deg);}
+        }
+        @keyframes flute {
+            25%{transform: translatex(-50px)  rotate(5deg);}
+            50%{transform: translatex(-100px)  rotate(10deg);}
+            75%{transform: translatex(-50px)  rotate(5deg);}
+        }
+        audio{
+            height: 10px;
+            width: 100px;
+            position: relative;
+            bottom: 10px;
+            left: 200px;
+        }
+    </style>
+</head>
+<body>
+        <img src="./rijKkq54T.gif" alt="fly">
+        <img src="./krishna.png" alt="krish">
+        <img src="./flute.png" alt="flute">
+        <img src="./peacock.png" alt="peacock">
+        <audio controls autoplay loop > <source src="./Krishna Flute.mp3" type="audio/mp3"></audio>
+</body>
+</html>
